@@ -1,0 +1,72 @@
+@import 'reset';
+@import 'atom-common.css';
+// 1rem = fontSize px
+// 1px = (1 / fontSize)rem
+$fontSize: 100;
+@function px2rem($px) {
+  @return ($px / $fontSize) + rem;
+}
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// van-dialog样式修改（根据UI标准，使用时请加私类van_dialog_common）
+.van-dialog.van_dialog_common {
+  width: 2.84rem;
+  border-radius: 0.08rem;
+  .van-dialog__header {
+    font-size: 0.16rem;
+    color: #131313;
+    font-weight: 600;
+  }
+  .van-dialog__content {
+    .van-dialog__message {
+      font-size: 0.15rem;
+      color: #131313;
+      line-height: 0.23rem;
+      padding: 0.18rem 0.3rem 0.25rem;
+    }
+  }
+  .van-dialog__footer {
+    font-size: 0.15rem;
+    .van-dialog__confirm {
+      color: #31C165;
+    }
+  }
+}
+
+/** 四条boder样式设置: */
+@mixin scale1px($borderColor: #000, $borderRadius: 0, $borderPosition: ''){
+  position: relative;
+  border:none;
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    @if $borderPosition == 'top' {
+      border-top: 1px solid $borderColor;
+    } @else if $borderPosition == 'left' {
+      border-left: 1px solid $borderColor;
+    } @else if $borderPosition == 'right' {
+      border-right: 1px solid $borderColor;
+    } @else if $borderPosition == 'bottom' {
+      border-bottom: 1px solid $borderColor;
+    } @else {
+      border: 1px solid $borderColor;
+    }
+    @if $borderRadius {
+      border-radius: $borderRadius;
+    }
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 200%;
+    height: 200%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+  }
+}

@@ -1,0 +1,56 @@
+p[class~='alignCenter']{
+  text-align: center;
+}
+
+p[class~='alignLeft']{
+  text-align: left;
+}
+
+p[class~='alignRight']{
+  text-align: right;
+}
+
+p[class~='alignJustify']{
+  text-align: justify;
+}
+
+p[class~='textIndent']{
+    text-indent: 2em;
+}
+
+lx-wave{ color : #000; text-decoration: underline; text-decoration-style: wavy; text-decoration-color: #000; }
+lx-emphasis{ color : #000; -webkit-text-emphasis-style: dot; -webkit-text-emphasis-position: under; -webkit-text-emphasis-color: #000; }
+lx-underline { width: 220px;  height: 120px;  background: #0000; padding-bottom:0px; border-bottom:1px solid #000; }
+
+lx-bracket::before{
+  content: " ";
+}
+/* lx-blank::before{ 
+  content: " ";
+} */
+lx-blank:after{
+    content: " ";
+    color: #000;
+}
+
+lx-border{
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #000;
+}
+lx-border:after{
+  content: " ";
+  color: #000;
+}
+
+lx-blank2 { 
+  width: 220px;  height: 120px;  background: #0000; padding-bottom:0px; border-bottom:1px solid #000;
+}
+
+/*
+<lx-wave>这是一个lx-wave标签</lx-wave>
+<lx-emphasis>这是一个lx-emphasis标签</lx-emphasis>
+<lx-underline>这是一个lx-underline标签</lx-underline>
+<lx-bracket>____</lx-bracket>
+<lx-blank>____</lx-blank>
+*/

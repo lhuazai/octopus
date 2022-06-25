@@ -1,0 +1,6 @@
+@mixin webpBackgroundImage ($url) {
+  background-image: url($url);
+  .webp &{
+    background-image: url($url + '.webp');
+  }
+}

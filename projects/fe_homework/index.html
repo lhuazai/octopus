@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" href="<%= BASE_URL %>favicon.ico">
+	<!-- <title><%= htmlWebpackPlugin.options.title %></title> -->
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_1726367_m2nnuiqxwrp.css">
+	<script src="//at.alicdn.com/t/font_1726367_m2nnuiqxwrp.js"></script>
+	<script src="//res.lexue.com/fe_sdk/feLogSDK.min.1.0.2.js"></script>
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+
+<script>
+	var _mtac = { "performanceMonitor": 1, "senseQuery": 1 };
+	(function () {
+		var mta = document.createElement("script");
+		mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+		mta.setAttribute("name", "MTAH5");
+		mta.setAttribute("sid", "500726349");
+		mta.setAttribute("cid", "500726351");
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(mta, s);
+	})();
+</script>
+<!-- 手机调试工具 -->
+<script src="//appd.knowbox.cn/ss/js/eruda-1.5.4.min.js"></script>
+<script>
+	if(window.location.host !== 'esfile.lexue.com'){
+		eruda.init();
+	}
+</script>
+</body>
+</html>
