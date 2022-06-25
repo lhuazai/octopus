@@ -22,7 +22,7 @@
   sdk_url: 'https://cdn.jsdelivr.net/npm/sa-sdk-javascript@1.14.9/sensorsdata.min.js',
   heatmap_url: 'https://cdn.jsdelivr.net/npm/sa-sdk-javascript@1.14.9/heatmap.min.js',
   name: 'sensors',
-  server_url: 'https://ana.lexue.com/sa?project=gaokao',
+  server_url: 'https://ana.xxxxx.com/sa',
   heatmap: {
     // 此参数针对预置 $WebClick 事件（包括 quick('trackHeatMap') quick('trackAllHeatMap') 触发的）生效。
     collect_element: function (elementTarget) {

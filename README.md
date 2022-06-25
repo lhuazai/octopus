@@ -105,7 +105,7 @@ vue.config.js  // vue cli serve webpack 配置
     nginx
     server{
     listen 80; 
-    server_name local.lexue.com;
+    server_name xxxx.com;
     location / 
         {
            proxy_pass http://127.0.0.1:9090;
@@ -116,10 +116,10 @@ vue.config.js  // vue cli serve webpack 配置
     }
 
     host
-    127.0.0.1 local.lexue.com
+    127.0.0.1 xxxx.com
 
     调试微信的时候 
-    local.lexue.com 可以统一改成 微信配置的域名 微信开发工具访问域名即可
+    xxxx.com 可以统一改成 微信配置的域名 微信开发工具访问域名即可
 ```
 
 ### Customize configuration

@@ -21,7 +21,7 @@ export default {
 
     tipsTwo: {
       type: String,
-      default: '关注乐学在线公众号，查看最新活动'
+      default: '关注在线公众号，查看最新活动'
     },
 
     btnText: {

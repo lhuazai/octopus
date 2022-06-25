@@ -42,7 +42,7 @@ export const appShareRegister = (opt) => {
   if (version >= 290) {
     shareData = window.encodeURIComponent(shareData);
   };
-  window.location.href = 'share://lexue?shareData=' + shareData;
+  window.location.href = 'share://xxxx?shareData=' + shareData;
 };
 export default {
   getShareData,

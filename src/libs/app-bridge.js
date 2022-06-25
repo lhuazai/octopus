@@ -89,7 +89,7 @@ export const initGetAppImg = (that, type) => {
  * @return {[type]} [description]
  */
 export const saveImages = opt => {
-  const shareImages = 'saveimage://lexue?imageurl=';
+  const shareImages = 'saveimage://xxxx?imageurl=';
   // 发送请求...
   window.location.href = shareImages + opt.imageUrl;
   console.log('保存图片到相册', shareImages + opt.imageUrl);
